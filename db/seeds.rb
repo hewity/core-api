@@ -1,3 +1,4 @@
+
 tags = Tag.create([
   {post:"I need a recommendation for a good immigration attorney", link:"http://shakillaw.com"},
   {post:"My family is new to the area and lookin for a safe neighborhood", link:"http://www.neighborhoodinfodc.org"},
