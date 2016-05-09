@@ -37,4 +37,3 @@ class PostsController < ApplicationController
     params.require(:Post).permit(:location, :body, :topic)
   end
 end
-end
