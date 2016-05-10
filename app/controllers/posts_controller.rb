@@ -3,7 +3,9 @@ class PostsController < ApplicationController
 
   def index
     @Posts = Post.all.order(:topic, :body)
-    render status: 200, json: @Posts.to_json
+#render :json => @programs, :include => {:insurer => {:only => :name}}, :except => [:created_at, :updated_at]
+
+    render status: 200, json: @Posts.to_json(include: [:comments])
   end
 
   def show
