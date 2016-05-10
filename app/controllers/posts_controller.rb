@@ -15,6 +15,8 @@ class PostsController < ApplicationController
     @Post = Post.new(post_params)
     if @Post.save
       render json: @Post.to_json, status: 200
+    else
+      render status: 400
     end
   end
 
@@ -22,13 +24,18 @@ class PostsController < ApplicationController
     @Post = Post.find(params[:id])
     if @Post.update(post_params)
       render json: @Post.to_json, status: 200
+    else
+      render status: 400
     end
+
   end
 
   def destroy
     @Post = Post.find(params[:id])
     if @Post.destroy
       render json: @Post.to_json, status: 200
+    else
+      render status: 400
     end
   end
 
