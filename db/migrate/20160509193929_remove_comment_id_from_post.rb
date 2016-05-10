@@ -1,5 +1,5 @@
 class RemoveCommentIdFromPost < ActiveRecord::Migration
   def change
-    remove_column :posts, :comment_id, :integer
+    remove_reference :comments, :post
   end
 end
