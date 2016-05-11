@@ -17,10 +17,12 @@ comments = Comment.create!([
 
 
 links = Link.create!([
-  {about:"Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus mollis interdum velit, quis venenatis urna. Maecenas posuere nulla id felis fermentum posuere. Phasellus nec leo ipsum. Fusce tempus leo eu nulla viverra tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vulputate blandit scelerisque.", url: "http://www.livescience.com/images/i/000/076/996/iFF/walking-nature-150629.jpg?1435603472"},
-  {about:"Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus mollis interdum velit, quis venenatis urna. Maecenas posuere nulla id felis fermentum posuere. Phasellus nec leo ipsum. Fusce tempus leo eu nulla viverra tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vulputate blandit scelerisque.", url:"http://givewithjoy.org/images/istock%20cup%20hands%20needy%20hungry%20poor%20poverty%20soup%20bowl%20web.jpg"},
-  {about:"Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus mollis interdum velit, quis venenatis urna. Maecenas posuere nulla id felis fermentum posuere. Phasellus nec leo ipsum. Fusce tempus leo eu nulla viverra tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vulputate blandit scelerisque.", url:"http://www.aimlower.com/wp-content/uploads/Child-and-Adult-holding-hands.jpg"}
-])
+  {about:"The federally funded and locally administered Arlington County Housing Choice (ACHCV) Program helps low-income families, the elderly and people with disabilities obtain safe, decent, and affordable housing in the private market.", url: "http://housing.arlingtonva.us/get-help/rental-services/achcv-program/"},
+
+  {about:"Neighborhood Health has been setting the standard for excellence in healthcare in Northern Virginia for over 17 years. Our philosophy of being innovative and compassionate in the delivery of health services guides our organization. We believe in an organizational culture of inclusiveness along with the willingness to be bold in our decision making process. ", url:"http://www.neighborhoodhealthva.org/"},
+
+  {about:"Immigration Legal Services (ILS) focuses on the provision of direct legal immigration services to foreign-born individuals and their families. Last year, we worked with more than 4,400 cases, ranging from consultations to full representation.  ILS has represented individuals from more than 135 countries around the world needing legal assistance with an immigration matter.  ILS also focuses on training lawyers to provide pro bono services and educating community groups on the latest immigration issues.", url:"https://www.catholiccharitiesdc.org/ILSStaff"}
+  ])
 
 
 tags = Tag.create!([
