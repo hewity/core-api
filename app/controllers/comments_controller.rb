@@ -1,5 +1,8 @@
 class CommentsController < ApplicationController
-
+  def index
+    @Comments = Comment.all
+    render status: 200, json: @Links.to_json
+  end
   def create
     @Comment = Comment.new(comment_params)
     if @Comment.save
