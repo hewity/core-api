@@ -8,7 +8,7 @@ class PostsController < ApplicationController
 
   def show
     @Post = Post.find(params[:id])
-    render status: 200, json: @Post.to_json
+    render status: 200, json: @Post.to_json(include: [:comments])
   end
 
   def create
