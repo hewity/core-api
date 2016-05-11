@@ -1,7 +1,7 @@
 class TagsController < ApplicationController
   def index
     @tags = Tag.all
-    render json: @tags
+    render json: @tags.to_json(include: [:links, :posts])
   end
 
   def show
