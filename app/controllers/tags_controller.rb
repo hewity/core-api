@@ -28,6 +28,7 @@ class TagsController < ApplicationController
     if @tag.destroy
       render status: 200, json: @tag.to_json(include: [:links, :posts])
     end
+  end
 
     private
     def tag_params
