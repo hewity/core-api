@@ -4,9 +4,9 @@ Tag.destroy_all
 Link.destroy_all
 
 posts = Post.create!([
-  {body:"I found a good doctor", topic:"Medical Care", location:"Woodbridge, VA"},
+  {body:"I found a good doctor", topic:"Healthcare", location:"Alexandria, VA"},
   {body:"I got great legal advice", topic:"Immigration", location:"Washington, DC"},
-  {body:"I found cheap rent through this agent", topic:"Housing", location:"Langley Park, MD"}
+  {body:"I found cheap rent through this agent", topic:"Housing", location:"Arlington, VA"}
 ])
 
 comments = Comment.create!([
@@ -27,6 +27,6 @@ links = Link.create!([
 
 tags = Tag.create!([
   {name:"Housing", post: posts[2], link: links[0]},
-  {name: "Doctors", post: posts[0], link: links[1]},
+  {name: "Healthcare", post: posts[0], link: links[1]},
   {name:"Immigration", post: posts[1], link: links[2]}
   ])
