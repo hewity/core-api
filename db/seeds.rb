@@ -24,7 +24,7 @@ links = Link.create!([
 
 
 tags = Tag.create!([
-  {name:"Housing"},
-  {name: "Doctors"},
-  {name:"Day Care"}
+  {name:"Housing", post: posts[2], link: links[0]},
+  {name: "Doctors", post: posts[0], link: links[1]},
+  {name:"Immigration", post: posts[1], link: links[2]}
   ])
