@@ -17,15 +17,15 @@ tags = Tag.create!([
 ])
 
 posts = Post.create!([
-  {body:"Here is a good doctor", tag:tags[1], location:"Alexandria, VA"},
-  {body:"I got great legal advice", tag: tags[2], location:"Washington, DC"},
-  {body:"I found cheap rent through this agent", tag:tags[0], location:"Arlington, VA"},
-  {body:"I found a great site on how to start a small business", tag:tags[3], location:"Washington, DC "},
-  {body:"Here is a great daycare center for adults", tag:tags[1], location:"Fairfax, VA"},
-  {body:"I found a great daycare center for children", tag:tags[5], location:"Fairfax, VA"},
-  {body:"If you are not able to afford to buy a new phone I found a free cell phone ", tag:tags[6], location:"Fairfax, VA"},
-  {body:"I found a great transportation site", tag:tags[9], location:"Fairfax, VA"},
-  {body:"This is very helpfull site for child missing ", tag:tags[8], location:"Fairfax, VA"}
+  {topic:"medical attention", body:"Here is a good doctor", tag:tags[1], location:"Alexandria, VA"},
+  {topic:"legal snafu", body:"I got great legal advice", tag: tags[2], location:"Washington, DC"},
+  {topic:"living situation", body:"I found cheap rent through this agent", tag:tags[0], location:"Arlington, VA"},
+  {topic:"money talks", body:"I found a great site on how to start a small business", tag:tags[3], location:"Washington, DC "},
+  {topic:"elder care", body:"Here is a great daycare center for adults", tag:tags[1], location:"Fairfax, VA"},
+  {topic:"daycare for children", body:"I found a great daycare center for children", tag:tags[5], location:"Fairfax, VA"},
+  {topic:"free phone plan", body:"If you are not able to afford to buy a new phone I found a free cell phone ", tag:tags[6], location:"Fairfax, VA"},
+  {topic:"bus depot", body:"I found a great transportation site", tag:tags[9], location:"Fairfax, VA"},
+  {topic:"amber alert", body:"This is very helpfull site for child missing ", tag:tags[8], location:"Fairfax, VA"}
 ])
 
 comments = Comment.create!([
