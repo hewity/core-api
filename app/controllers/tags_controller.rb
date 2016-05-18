@@ -11,6 +11,7 @@ class TagsController < ApplicationController
 
   def create
     @tag = Tag.new(tag_params)
+    # this error handling could be improved with model validations and some sort of 'else' action
     if @tag.save
       render status: 200, json: @tag.to_json(include: [:links, :posts])
     end
